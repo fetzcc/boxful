@@ -3,6 +3,9 @@ angular.module("app", ["ngResource", "app.constants", "app.packager", "app.calcu
 .factory('APIRequests', function($resource) {
   return $resource('http://kernl.rocks/api/v2/public/entries.json?storage_id=15')
 })
+.factory('APIRequests2', function($resource) {
+  return $resource('/core/contact.php')
+})
 
 .run(["$rootScope", function($rootScope){
 
@@ -12,10 +15,10 @@ angular.module("app", ["ngResource", "app.constants", "app.packager", "app.calcu
 
 }])
 
-.controller("ContactCtrl", function($scope, APIRequests, $timeout){
+.controller("ContactCtrl", function($scope, APIRequests2, $timeout){
 
   var reset = function() {
-    $scope.form = new APIRequests({
+    $scope.form = new APIRequests2({
       name: "",
       contact: "",
       message: "",

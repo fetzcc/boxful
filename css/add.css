@@ -1,3 +1,15 @@
 .phone2 {
   margin-left: 20px;
 }
+ul.ul {
+  line-height: 28px;
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-bottom: 18px;
+}
+.content.ttt {
+  margin-bottom: 100px;
+}
+.content.ttt a {
+  color: #3eaa92;
+}

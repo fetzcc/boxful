@@ -106,31 +106,31 @@ _paq.push(['enableLinkTracking']);
           
             
               <li >
-                <a href="/boxen/din_a6.html"><span>Din A6</span><i>150 x 105</i></a>
+                <a href="/boxen/din_a6.html"><span>Din A6</span><i>150 x 105 mm</i></a>
               </li>
             
           
             
               <li >
-                <a href="/boxen/din_lang.html"><span>Din lang</span><i>210 x 105</i></a>
+                <a href="/boxen/din_lang.html"><span>Din lang</span><i>210 x 105 mm</i></a>
               </li>
             
           
             
               <li >
-                <a href="/boxen/din_a5.html"><span>Din A5</span><i>210 x 150</i></a>
+                <a href="/boxen/din_a5.html"><span>Din A5</span><i>210 x 150 mm</i></a>
               </li>
             
           
             
               <li >
-                <a href="/boxen/quadratisch.html"><span>Quadratisch</span><i>210 x 210</i></a>
+                <a href="/boxen/quadratisch.html"><span>Quadratisch</span><i>210 x 210 mm</i></a>
               </li>
             
           
             
               <li >
-                <a href="/boxen/din_a4.html"><span>Din A4</span><i>300 x 210</i></a>
+                <a href="/boxen/din_a4.html"><span>Din A4</span><i>300 x 210 mm</i></a>
               </li>
             
           
@@ -279,7 +279,7 @@ _paq.push(['enableLinkTracking']);
   </div>
   <!-- form-group -->
   
-    <button ng-click="send()" class="btn btn__green" ng-disabled="contactForm.$invalid">Ein unverbindliches Angebot anfragen</button>
+    <button ng-click="send()" class="btn btn__green" ng-disabled="contactForm.$invalid || sending">Ein unverbindliches Angebot anfragen</button>
   
   <span class="alert alert_yes" ng-show="sent"><i>Ihre Anfrage wurde erfolgreich gesendet</i></span>
 </form>
